@@ -3,6 +3,7 @@ import { Schema, model } from "mongoose";
 const carSchema = new Schema({
     licensePlate: {
         type: Schema.Types.String,
+        unique: true,
         min: 7,
         max: 7,
         required: true
