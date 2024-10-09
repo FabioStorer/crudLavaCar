@@ -18,6 +18,7 @@ const carSchema = new Schema({
     },
     category: {
         type: Schema.Types.String,
+        enum: ['CAR', 'MOTORCYCLE', 'BUS', 'TRUCK'],
         required: true
     },
     owner: {
